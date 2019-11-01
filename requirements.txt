@@ -3,3 +3,4 @@ tensorflow==2.0.0-alpha0
 opencv-python
 tqdm
 keras
+Flask-RESTful
