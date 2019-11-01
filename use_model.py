@@ -21,8 +21,7 @@ def overall(image):
     img = cv2.resize(img, (50,50))
     #print(img.shape)
     img = img.reshape(1, 50, 50, 3)
-    imag = tf.cast(img, tf.float32)
-    p = loaded_model.predict(imag)
+    p = loaded_model.predict(img)
     answer = p[0][0]
 
     if int(answer) == 0:
