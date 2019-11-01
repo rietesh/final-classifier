@@ -6,7 +6,7 @@ import use_model
 import json
 
 UPLOAD_FOLDER = './uploads'
-ALLOWED_EXTENSIONS = set(['jpg'])
+ALLOWED_EXTENSIONS = set(['jpg','jpeg'])
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
