@@ -6,4 +6,4 @@ COPY . /final_classifier
 WORKDIR /final_classifier
 RUN pip3 install -r requirements.txt
 ENTRYPOINT [ "python3" ]
-CMD [ "app.py" ]
+CMD [ "restful_app.py" ]
