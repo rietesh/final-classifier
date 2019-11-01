@@ -7,8 +7,8 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 api = Api(app)
-UPLOAD_FOLDER = './dataset'
-ALLOWED_EXTENSIONS = set(['jpg'])
+UPLOAD_FOLDER = './uploads'
+ALLOWED_EXTENSIONS = set(['jpg','jpeg'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 def allowed_file(filename):
     return '.' in filename and \
