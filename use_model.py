@@ -29,4 +29,3 @@ def overall(image):
     else:
         return 'DOG'
 
-# print(overall(r"C:\Users\Baba_dook\Desktop\cats-dogs\uploads\2.jpg"))
