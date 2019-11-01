@@ -28,7 +28,7 @@ class CATSDOGS(Resource):
             final_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             print(filename)
             ans = use_model.overall(final_path)
-            return json.dumps({"ANSWER": ans})
+            return {"ANSWER": ans}
         else:
             return {'False'}
 
